@@ -1,6 +1,10 @@
-let senha = "123"
+let senha = "123";
+let senhaDoUsuario; // declaração
 
 do {
-  senha = prompt("coloque sua senha");
-} while (!senha);
-console.log("aprovado " + senha);
+  senhaDoUsuario = prompt('insira a sua senha');
+} while (senha != senhaDoUsuario);
+
+// alterniva utilizando o operador (!) negação logica
+// do {}
+//} while(!(senha == senhadousuario));
